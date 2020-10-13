@@ -14,7 +14,7 @@ var favouriteColor = prompt('Enter your favourite color');
 document.getElementById('favouritecolor').innerHTML = 'Favourite color: ' + favouriteColor;
 
 // PASSWORD
-var passWord = prompt('Enter your password');
+var passWord = userName + surName + favouriteColor;
 
 document.getElementById('password').innerHTML = 'Password: ' + passWord;
 
