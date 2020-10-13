@@ -14,11 +14,9 @@ var favouriteColor = prompt('Enter your favourite color');
 document.getElementById('favouritecolor').innerHTML = 'Favourite color: ' + favouriteColor;
 
 // PASSWORD
-var passWord;
+var passWord = prompt('Enter your password');
 
-var passWord = userName + surName + favouriteColor;
-
-document.getElementById('password').innerHTML = 'Password: nomecognomecolorepreferito19';
+document.getElementById('password').innerHTML = 'Password: ' + passWord;
 
 // YEARS AND AGE SECTION
 // CURRENTYEAR
@@ -30,9 +28,9 @@ var ageUser = prompt('Enter your age');
 document.getElementById('age').innerHTML = 'Age: ' + ageUser;
 
 // BORN YEAR
-var yearOfBirth;
+var yearOfBirth = currentYear - ageUser;
 
-document.getElementById('yearofbirth').innerHTML = currentYear - ageUser
+document.getElementById('yearofbirth').innerHTML = 'Year of birth: ' + yearOfBirth;
 
 
 
