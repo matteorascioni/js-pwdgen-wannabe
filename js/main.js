@@ -3,10 +3,22 @@ var userName = prompt('Enter your name');
 
 document.getElementById('username').innerHTML = 'Name: ' + userName;
 
-// SECOND NAME REQUEST
+// SURNAME REQUEST
 var surName = prompt('Enter your surname');
 
 document.getElementById('surname').innerHTML = 'Surname: ' + surName;
+
+// FAVOURITE COLOR
+var favouriteColor = prompt('Enter your favourite color');
+
+document.getElementById('favouritecolor').innerHTML = 'Favourite color: ' + favouriteColor;
+
+// PASSWORD
+var passWord;
+
+var passWord = userName + surName + favouriteColor;
+
+document.getElementById('password').innerHTML = 'Password: nomecognomecolorepreferito19';
 
 // YEARS AND AGE SECTION
 // CURRENTYEAR
@@ -18,9 +30,26 @@ var ageUser = prompt('Enter your age');
 document.getElementById('age').innerHTML = 'Age: ' + ageUser;
 
 // BORN YEAR
-var yearOfBirth = currentYear - ageUser;
+var yearOfBirth;
 
-console.log(yearOfBirth);
+document.getElementById('yearofbirth').innerHTML = currentYear - ageUser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // COUNTRY OF BIRTH
 var countryOfBirth = prompt('Enter your country');
@@ -36,9 +65,4 @@ document.getElementById('city').innerHTML = 'City of birth: ' + cityOfBirth;
 var phoneNumber = prompt('Enter your phone number');
 
 document.getElementById('phone').innerHTML = 'Phone Number: ' + phoneNumber; 
-
-// STARRED COLOR
-var favouriteColor = prompt('Enter your favourite color');
-
-document.getElementById('favouritecolor').innerHTML = 'Favourite color: ' + favouriteColor;
 
