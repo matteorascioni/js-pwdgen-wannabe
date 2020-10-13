@@ -10,7 +10,7 @@ document.getElementById('surname').innerHTML = 'Surname: ' + surName;
 
 // YEARS AND AGE SECTION
 // CURRENTYEAR
-var annoAttuale = 2020;
+var currentYear = 2020;
 
 // AGE USER REQUEST
 var ageUser = prompt('Enter your age');
@@ -18,11 +18,16 @@ var ageUser = prompt('Enter your age');
 document.getElementById('age').innerHTML = 'Age: ' + ageUser;
 
 // BORN YEAR
-var annoNascita = annoAttuale - ageUser;
+var yearOfBirth = currentYear - ageUser;
 
-console.log(annoNascita);
+console.log(yearOfBirth);
 
-//USER CITY OF BIRTH
+// COUNTRY OF BIRTH
+var countryOfBirth = prompt('Enter your country');
+
+document.getElementById('country').innerHTML = 'Country of birth: ' + countryOfBirth;
+
+//  CITY OF BIRTH
 var cityOfBirth = prompt('Enter your city of birth');
 
 document.getElementById('city').innerHTML = 'City of birth: ' + cityOfBirth; 
